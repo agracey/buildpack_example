@@ -1,0 +1,9 @@
+api = "0.6"
+
+[buildpack]
+  id = "atgracey/node-bins"
+  version = "0.0.2"
+
+
+  [[stacks]]
+  id = "atgracey.stack.test"

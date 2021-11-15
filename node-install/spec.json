@@ -1,0 +1,28 @@
+{
+  "name":"nodejs-install",
+  "layers":[{
+    "name":"npmhome",
+    "cache": true,
+    "launch": false,
+    "build": true
+  }],
+  "environment":[{
+      "key": "PATH",
+      "default":"{{env.PATH}}:{{layers_dir}}/../atgracey_node-bins/nodebin/node-v17.0.1-linux-x64/bin"
+  },{
+    "key":"HOME",
+    "default":"{{layers_dir}}/npmhome"
+  }],
+  "detect": {
+    "exists": [{
+      "path": "./package.json"
+    }]
+  },
+  "build":[{
+    "remote": [],
+    "local": [],
+    "scripts": [{
+      "command" : "npm install"
+    }]
+  }]
+}

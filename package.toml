@@ -1,0 +1,8 @@
+[buildpack]
+uri = "node/"
+
+[[dependencies]]
+uri = "node-bins/"
+
+[[dependencies]]
+uri = "node-install/"

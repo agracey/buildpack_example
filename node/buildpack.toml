@@ -1,0 +1,17 @@
+api = "0.2"
+
+[buildpack]
+id = "node"
+version = "0.0.1"
+name = "Node.js build with metabuildpack"
+
+homepage = "blah.com"
+
+[[order]]
+[[order.group]]
+id = "node-bins"
+version = "0.0.2"
+
+[[order.group]]
+id = "node-install"
+version = "0.0.1"

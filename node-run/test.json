@@ -1,0 +1,29 @@
+{
+  "name":"nodejs-install",
+
+  "layers":[{
+    "name":"nodejs",
+    "cache": true,
+    "launch": true,
+    "build": true
+  }],
+  "environment":[{
+    "key": "SOMEENV",
+    "default": "SOMEDEFVAL"
+  }],
+  "detect": {
+    "exists": [{
+      "path": "package.json"
+    }]
+  },
+
+
+
+  "build":[{
+    "remote": [],
+    "local": [],
+    "scripts": [{
+      "command": "touch somefile"
+    }]
+  }]
+}
