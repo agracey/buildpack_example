@@ -5,6 +5,6 @@ layers_dir="$1"
 env_dir="$2/env"
 plan_path="$3"
 
-metabuildpack --phase build -b $CNB_BUILDPACK_DIR -f $CNB_BUILDPACK_DIR/spec.json -e $env_dir -p $plan_path -l $layers_dir
+/usr/local/bin/metabuildpack --phase build -b $CNB_BUILDPACK_DIR -f $CNB_BUILDPACK_DIR/spec.json -e $env_dir -p $plan_path -l $layers_dir
 
 exit $?

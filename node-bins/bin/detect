@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-set -x
 
 env_dir="$1/env"
 plan_path="$2"
@@ -19,5 +18,5 @@ ls -la $2
 
 echo $CNB_BUILDPACK_DIR
 
-metabuildpack --phase detect -b $CNB_BUILDPACK_DIR -f $CNB_BUILDPACK_DIR/spec.json -e $env_dir -p $plan_path
+/usr/local/bin/metabuildpack --phase detect -b $CNB_BUILDPACK_DIR -f $CNB_BUILDPACK_DIR/spec.json -e $env_dir -p $plan_path
 exit $?
