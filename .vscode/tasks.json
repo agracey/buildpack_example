@@ -1,0 +1,25 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Builder",
+      "type": "shell",
+      "command": "pack builder create docker.io/atgracey/builder:opensuse --config ./builder/builder.toml"
+    },
+    {
+      "label": "Push Builder",
+      "type": "shell",
+      "command": "docker push docker.io/atgracey/builder:opensuse"
+    },
+    {
+      "label": "Build and Push Builder",
+      "dependsOn": ["Build Builder", "Push Builder"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
