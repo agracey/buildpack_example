@@ -6,4 +6,4 @@ api = "0.6"
 
 
   [[stacks]]
-  id = "atgracey.stack.test"
+  id = "opensuse.stack.leap15.3"
