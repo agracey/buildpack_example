@@ -5,4 +5,4 @@ api = "0.6"
   version = "0.0.1"
 
 [[stacks]]
-  id = "opensuse.stack.leap15.3"
+  id = "sle.stack.15.4"

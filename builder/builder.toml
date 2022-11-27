@@ -19,6 +19,6 @@ version = "0.0.1"
 
 # Stack that will be used by the builder
 [stack]
-id = "opensuse.stack.leap15.3"
-run-image = "registry.opensuse.org/home/atgracey/opensuse_leap_15.3/cnbp_run:latest"
-build-image = "docker.io/atgracey/metabuildpackbuild:latest"
+id = "sle.stack.15.4"
+run-image = "registry.opensuse.org/home/atgracey/cnbp/containers/cnbp_run:latest"
+build-image = "registry.opensuse.org/home/atgracey/cnbp/containers/cnbp_build:latest"

@@ -18,5 +18,5 @@ ls -la $2
 
 echo $CNB_BUILDPACK_DIR
 
-/usr/local/bin/metabuildpack --phase detect -b $CNB_BUILDPACK_DIR -f $CNB_BUILDPACK_DIR/spec.json -e $env_dir -p $plan_path
+/usr/bin/metabuildpack --phase detect -b $CNB_BUILDPACK_DIR -f $CNB_BUILDPACK_DIR/spec.json -e $env_dir -p $plan_path
 exit $?
